@@ -1,5 +1,5 @@
 // @flow
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 export const STEP_NUMBER_RADIUS: number = 14;
 export const STEP_NUMBER_DIAMETER: number = STEP_NUMBER_RADIUS * 2;
@@ -7,12 +7,13 @@ export const ZINDEX: number = 100;
 export const MARGIN: number = 13;
 export const OFFSET_WIDTH: number = 4;
 export const ARROW_SIZE: number = 6;
+export const WIX_NAV_SIZE: number = Platform.OS === 'ios' ? 65 : 56;
 
 export default StyleSheet.create({
   container: {
     position: 'absolute',
     left: 0,
-    top: 56,
+    top: WIX_NAV_SIZE,
     right: 0,
     bottom: 0,
     zIndex: ZINDEX,
