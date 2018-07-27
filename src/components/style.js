@@ -12,7 +12,7 @@ export default StyleSheet.create({
   container: {
     position: 'absolute',
     left: 0,
-    top: 0,
+    top: 56,
     right: 0,
     bottom: 0,
     zIndex: ZINDEX,
@@ -36,21 +36,18 @@ export default StyleSheet.create({
   tooltipContainer: {
     flex: 1,
   },
-  stepNumberContainer: {
+  stepNumber: {
     position: 'absolute',
     width: STEP_NUMBER_DIAMETER,
     height: STEP_NUMBER_DIAMETER,
-    overflow: 'hidden',
-    zIndex: ZINDEX + 1,
-  },
-  stepNumber: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
     borderWidth: 2,
     borderRadius: STEP_NUMBER_RADIUS,
     borderColor: '#FFFFFF',
-    backgroundColor: '#27ae60',
+    backgroundColor: '#005abc',
+    overflow: 'hidden',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: ZINDEX + 1,
   },
   stepNumberText: {
     fontSize: 10,
@@ -61,7 +58,7 @@ export default StyleSheet.create({
     padding: 10,
   },
   buttonText: {
-    color: '#27ae60',
+    color: '#005abc',
   },
   bottomBar: {
     marginTop: 10,
