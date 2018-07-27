@@ -15,6 +15,7 @@ type Props = {
   handlePrev: func,
   handleStop: func,
   currentStep: Step,
+  currentStepNumber: number,
 };
 
 const Tooltip = ({
@@ -24,10 +25,11 @@ const Tooltip = ({
   handlePrev,
   handleStop,
   currentStep,
+  currentStepNumber,
 }: Props) => (
   <View>
     <View style={styles.tooltipContainer}>
-      <Text testID="stepDescription" style={styles.tooltipText}>{currentStep.text}</Text>
+      <Text testID="stepDescription" style={styles.tooltipText}>{currentStepNumber}) {currentStep.text}</Text>
     </View>
     <View style={[styles.bottomBar]}>
       {

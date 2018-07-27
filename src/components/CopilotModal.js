@@ -244,23 +244,23 @@ class CopilotModal extends Component<Props, State> {
     } = this.props;
 
     return [
-      <Animated.View
-        key="stepNumber"
-        style={[
-          styles.stepNumberContainer,
-          {
-            left: this.state.animatedValues.stepNumberLeft,
-            top: Animated.add(this.state.animatedValues.top, -STEP_NUMBER_RADIUS),
-          },
-        ]}
-      >
-        <StepNumberComponent
-          isFirstStep={this.props.isFirstStep}
-          isLastStep={this.props.isLastStep}
-          currentStep={this.props.currentStep}
-          currentStepNumber={this.props.currentStepNumber}
-        />
-      </Animated.View>,
+      // <Animated.View
+      //   key="stepNumber"
+      //   style={[
+      //     styles.stepNumberContainer,
+      //     {
+      //       left: this.state.animatedValues.stepNumberLeft,
+      //       top: Animated.add(this.state.animatedValues.top, -STEP_NUMBER_RADIUS),
+      //     },
+      //   ]}
+      // >
+      //   <StepNumberComponent
+      //     isFirstStep={this.props.isFirstStep}
+      //     isLastStep={this.props.isLastStep}
+      //     currentStep={this.props.currentStep}
+      //     currentStepNumber={this.props.currentStepNumber}
+      //   />
+      // </Animated.View>,
       <Animated.View key="arrow" style={[styles.arrow, this.state.arrow]} />,
       <Animated.View key="tooltip" style={[styles.tooltip, this.state.tooltip]}>
         <TooltipComponent
@@ -270,6 +270,7 @@ class CopilotModal extends Component<Props, State> {
           handleNext={this.handleNext}
           handlePrev={this.handlePrev}
           handleStop={this.handleStop}
+          currentStepNumber={this.props.currentStepNumber}
         />
       </Animated.View>,
     ];
