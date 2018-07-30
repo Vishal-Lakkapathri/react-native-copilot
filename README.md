@@ -22,12 +22,6 @@
   <img src="https://media.giphy.com/media/65VKIzGWZmHiEgEBi7/giphy.gif" alt="React Native Copilot" />
 </p>
 
-<p align="center">
-  <a href="https://expo.io/@mohebifar/copilot-example" >
-    Demo
-  </a>
-</p>
-
 ## Installation
 ```
 npm install --save copart-react-native-copilot
@@ -93,7 +87,7 @@ class HomeScreen extends Component {
 export default copilot()(HomeScreen);
 ```
 
-If you are looking for a working example, please check out [this link](https://github.com/okgrow/react-native-copilot/blob/master/example/App.js).
+If you are looking for a working example, please check out [this link](https://github.com/Vishal-Lakkapathri/react-native-copilot/blob/master/example/App.js).
 
 ### Overlays and animation
 The overlay in react-native copilot is the component that draws the dark transparent over the root component. React-native copilot comes with two overlay components: `view` and `svg`.
@@ -117,7 +111,7 @@ copilot({
 ```
 
 ### Custom tooltip component
-You can customize the tooltip by passing a component to the `copilot` HOC maker. If you are looking for an example tooltip component, take a look at [the default tooltip implementation](https://github.com/okgrow/react-native-copilot/blob/master/src/components/Tooltip.js).
+You can customize the tooltip by passing a component to the `copilot` HOC maker. If you are looking for an example tooltip component, take a look at [the default tooltip implementation](https://github.com/Vishal-Lakkapathri/react-native-copilot/blob/master/src/components/Tooltip.js).
 
 ```js
 const TooltipComponent = ({
@@ -137,7 +131,7 @@ copilot({
 ```
 
 ### Custom step number component
-You can customize the step number by passing a component to the `copilot` HOC maker. If you are looking for an example step number component, take a look at [the default step number implementation](https://github.com/okgrow/react-native-copilot/blob/master/src/components/StepNumber.js).
+You can customize the step number by passing a component to the `copilot` HOC maker. If you are looking for an example step number component, take a look at [the default step number implementation](https://github.com/Vishal-Lakkapathri/react-native-copilot/blob/master/src/components/StepNumber.js).
 
 ```js
 const StepNumberComponent = ({
