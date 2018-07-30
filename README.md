@@ -30,7 +30,7 @@
 
 ## Installation
 ```
-npm install --save @okgrow/react-native-copilot
+npm install --save copart-react-native-copilot
 ```
 
 **Optional**: If you want to have the smooth SVG animation, you should install and link `react-native-svg`. If you are using Expo, **you can skip** this as Expo comes with `react-native-svg`.
@@ -44,7 +44,7 @@ react-native link react-native-svg
 Use the `copilot()` higher order component for the screen component that you want to use copilot with:
 
 ```js
-import { copilot } from '@okgrow/react-native-copilot';
+import { copilot } from 'copart-react-native-copilot';
 
 class HomeScreen extends Component { /* ... */ }
 
@@ -54,7 +54,7 @@ export default copilot()(HomeScreen);
 Before defining walkthrough steps for your react elements, you must make them `walkthroughable`. The easiest way to do that for built-in react native components, is using the `walkthroughable` HOC. Then you must wrap the element with `CopilotStep`.
 
 ```js
-import { copilot, walkthroughable, CopilotStep } from '@okgrow/react-native-copilot';
+import { copilot, walkthroughable, CopilotStep } from 'copart-react-native-copilot';
 
 const CopilotText = walkthroughable(Text);
 
@@ -158,7 +158,7 @@ copilot({
 The components wrapped inside `CopilotStep`, will receive a `copilot` prop of type `Object` which the outermost rendered element of the component or the element that you want the tooltip be shown around, must extend.
 
 ```js
-import { copilot, CopilotStep } from '@okgrow/react-native-copilot';
+import { copilot, CopilotStep } from 'copart-react-native-copilot';
 
 const CustomComponent = ({ copilot }) => <View {...copilot}><Text>Hello world!</Text></View>;
 
@@ -190,7 +190,7 @@ List of available events is:
 
 **Example:**
 ```js
-import { copilot, CopilotStep } from '@okgrow/react-native-copilot';
+import { copilot, CopilotStep } from 'copart-react-native-copilot';
 
 const CustomComponent = ({ copilot }) => <View {...copilot}><Text>Hello world!</Text></View>;
 
@@ -200,7 +200,7 @@ class HomeScreen {
       // Copilot tutorial finished!
     });
   }
-  
+
   componentWillUnmount() {
     // Don't forget to disable event handlers to prevent errors
     this.props.copilotEvents.off('stop');
@@ -215,12 +215,6 @@ class HomeScreen {
 ## Contributing
 Issues and Pull Requests are always welcome.
 
-Please read OK GROW!'s global [contribution guidelines](https://okgrow.github.io/guides/docs/open-source-contributing.html).
-
-If you are interested in becoming a maintainer, get in touch with us by sending an email or opening an issue. You should already have code merged into the project. Active contributors are encouraged to get in touch.
-
-Please note that all interactions in @okgrow's repos should follow our [Code of Conduct](https://okgrow.github.io/guides/docs/open-source-code-of-conduct.html).
-
 ## License
 
-[MIT](LICENSE) © 2017 OK GROW!, https://www.okgrow.com.
+[MIT](LICENSE) © 2017.
