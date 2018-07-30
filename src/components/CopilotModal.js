@@ -21,6 +21,7 @@ type Props = {
   overlay: 'svg' | 'view',
   animated: boolean,
   androidStatusBarVisible: boolean,
+  wixNavigationStyles: Object,
 };
 
 type State = {
@@ -288,7 +289,7 @@ class CopilotModal extends Component<Props, State> {
         transparent
       >
         <View
-          style={styles.container}
+          style={[styles.container, this.props.wixNavigationStyles]}
           onLayout={this.handleLayoutChange}
         >
           {contentVisible && this.renderMask()}

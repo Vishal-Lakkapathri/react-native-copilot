@@ -24,6 +24,7 @@ type State = {
   currentStep: ?Step,
   visible: boolean,
   androidStatusBarVisible: boolean,
+  wixNavigationStyles: Object,
 };
 
 const copilot = ({
@@ -32,6 +33,7 @@ const copilot = ({
   stepNumberComponent,
   animated,
   androidStatusBarVisible,
+  wixNavigationStyles,
 } = {}) =>
   (WrappedComponent) => {
     class Copilot extends Component<any, State> {
@@ -187,6 +189,7 @@ const copilot = ({
               overlay={overlay}
               animated={animated}
               androidStatusBarVisible={androidStatusBarVisible}
+              wixNavigationStyles={wixNavigationStyles}
               ref={(modal) => { this.modal = modal; }}
             />
           </View>
