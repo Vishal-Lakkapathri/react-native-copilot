@@ -1,5 +1,5 @@
 {
-  "name": "@okgrow/react-native-copilot",
+  "name": "copart-react-native-copilot",
   "version": "2.3.4",
   "description": "Make an interactive step by step tour guide for you react-native app",
   "main": "src/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/okgrow/react-native-copilot.git"
+    "url": "git+https://github.com/Vishal-Lakkapathri/react-native-copilot"
   },
   "keywords": [
     "react-native",
@@ -23,12 +23,12 @@
   "files": [
     "src"
   ],
-  "author": "OK GROW! <hello@okgrow.com> (https://www.okgrow.com)",
+  "author": "Vishal-Lakkapathri",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/okgrow/react-native-copilot/issues"
+    "url": "https://github.com/Vishal-Lakkapathri/react-native-copilot/issues"
   },
-  "homepage": "https://github.com/okgrow/react-native-copilot#readme",
+  "homepage": "https://github.com/Vishal-Lakkapathri/react-native-copilot#readme",
   "devDependencies": {
     "babel-eslint": "^8.0.1",
     "babel-jest": "^21.2.0",
