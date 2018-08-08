@@ -89,6 +89,17 @@ export default copilot()(HomeScreen);
 
 If you are looking for a working example, please check out [this link](https://github.com/Vishal-Lakkapathri/react-native-copilot/blob/master/example/App.js).
 
+### Support for wixNavigation
+As the overlay starts from the top of the screen. React-native copilot has a property to adjust the overlay according to  `wixNavigation` styles.
+
+```js
+copilot({
+  wixNavigationStyles: {
+    top: 10,
+  }
+})
+```
+
 ### Overlays and animation
 The overlay in react-native copilot is the component that draws the dark transparent over the root component. React-native copilot comes with two overlay components: `view` and `svg`.
 
